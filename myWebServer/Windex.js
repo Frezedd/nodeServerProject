@@ -1,17 +1,102 @@
-let http = require('http');
+let http = require("http");
 console.log(http);
 
-//create a server object:
+let random = require("../randomNumber/Rindex");
+console.log(random);
+
+//create a server object:l
 
 let serve= http.createServer((req, res) => {
-    console.log(req);
-    console.log(res);
-    res.write('Hello World!'); //write a response to the client
-    res.end(); //end the response
+    res.write("Request received and processed"); //write a response to the client
+    res.end();
+    res.se
+    // res.sendDate(`${x}`);
+    // let Z= random.randomNumber();
+    // res.end(`Request received and processed ${Z}`); //end the response
 })
-serve.listen(1234, function() {
-    console.log("Server running", serve.listen);
+serve.listen(1234, function(err) {
+    if (err) {
+        console.log(err);
+    }
+    console.log("Server running");
 }); //the server object listens on port 1234
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
